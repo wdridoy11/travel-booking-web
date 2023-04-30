@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const SingleNews = (props) => {
-    const {id,img,title,description}=props.singleNews;
+const NewsDisplay = (props) => {
+    const {id,img,title,description}=props.news;
   return (
     <div>
         <div>
@@ -10,8 +10,8 @@ const SingleNews = (props) => {
                 <img className='w-full h-80' src={img} alt="" />
                 <div className=' p-5'>
                     <h3 className='text-xl text-black font-medium mb-2'>{title.length <30 ? <>{title}</>:<>{title.slice(0,45)}...</>}</h3>
-                    <p className='text-black'>{description < 100 ? <>{description}</>:<>{description.slice(0,100)}...</>}</p>
-                    <Link className='text-black mt-2 font-medium' to={`/news/${id}`}>Read More</Link>
+                    <p className='text-black mb-3'>{description < 100 ? <>{description}</>:<>{description.slice(0,100)}...</>}</p>
+                    <Link className='text-black font-medium' to={`/news/${id}`}>Read More</Link>
                 </div>
             </div>
         </div>
@@ -19,4 +19,4 @@ const SingleNews = (props) => {
   )
 }
 
-export default SingleNews
+export default NewsDisplay

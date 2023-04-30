@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
 
-const SingleNewDetails = () => {
+const SingleNewDisplay = () => {
   const singleNews=useLoaderData();
   const {img,title,description,article}=singleNews;
   return (
@@ -19,4 +19,4 @@ const SingleNewDetails = () => {
   )
 }
 
-export default SingleNewDetails
+export default SingleNewDisplay

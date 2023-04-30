@@ -5,11 +5,11 @@ import {createBrowserRouter} from 'react-router-dom'
 
 // import pages
 import Main from '../../layout/Main';
-import News from '../../pages/news/News';
 import Login from '../../pages/login/Login';
 import Home from '../../pages/home/home/Home';
 import Registration from '../../pages/registration/Registration';
-import SingleNewDetails from '../../pages/news/SingleNewDetails';
+import NewsDataLoad from '../../pages/news/NewsDataLoad';
+import SingleNewDisplay from '../../pages/news/SingleNewDisplay';
 
 // create router
 const router=createBrowserRouter([
@@ -31,12 +31,12 @@ const router=createBrowserRouter([
             },
             {
                 path:"news",
-                element:<News></News>,
+                element:<NewsDataLoad></NewsDataLoad>,
                 loader:({params})=>fetch(`http://localhost:5000/news`)
             },
             {
                 path:"/news/:id",
-                element:<SingleNewDetails></SingleNewDetails>,
+                element:<SingleNewDisplay></SingleNewDisplay>,
                 loader:({params})=>fetch(`http://localhost:5000/news/${params.id}`)
             }
         ]
