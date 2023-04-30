@@ -5,7 +5,7 @@ const googleIcon=`https://cdn-icons-png.flaticon.com/512/281/281764.png`;
 
 const Login = () => {
   return (
-    <div className='w-full items-center'>
+    <div className='w-full items-center pt-32'>
         <div className='container mx-auto'>
             <div>
                 <div className='border border-[#ddd] p-12 md:w-1/2 mx-auto rounded-lg'>
@@ -14,7 +14,10 @@ const Login = () => {
                         <input className='w-full border-b border-[#ddd] mb-5 pb-2 text-base' type="email" name="email" id="email" placeholder='Enter your email' required/>
                         <input className='w-full border-b border-[#ddd] mb-5 pb-2 text-base' type="password" name="password" id="password" placeholder='Enter your password' required/>
                         <div className='flex justify-between'>
-                            <input type="checkbox" name="checkbox" id="checkbox"  value="Remember Me"/>
+                            <div className='flex items-center gap-2'>
+                                <input className='checkbox' type="checkbox" name="checkbox" id="checkbox"  value="Remember Me"/>
+                                <label className='font-medium text-black' htmlFor="checkbox">Remember Me</label>
+                            </div>
                             <Link className='text-[#F9A51A] text-base font-medium'>Forgot Password</Link>
                         </div>
                         <button className='btn text-white bg-[#F9A51A] w-full border-0 rounded-none mt-10 mb-4'>Login</button>
