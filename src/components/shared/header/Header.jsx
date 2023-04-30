@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../../assets/logo.png'
+import { AuthContext } from '../../../context/AuthProvider';
 
 const Header = () => {
+
+    const {user,logOut}=useContext(AuthContext);
+
   return (
     <div className='py-5'>
         <div className='container mx-auto'>
@@ -16,7 +20,12 @@ const Header = () => {
                     <Link className='text-base font-medium' to={`/`}>Destination</Link>
                     <Link className='text-base font-medium' to={`/`}>Blog</Link>
                     <Link className='text-base font-medium' to={`/`}>Contact</Link>
+                    {user ? <>
+                        <p className='text-base text-black font-medium'>{user.displayName}</p>
+                        <Link className='text-base font-medium bg-[#F9A51A] text-black px-4 py-1 rounded-md' onClick={logOut}>Logout</Link>
+                    </>:
                     <Link className='text-base font-medium bg-[#F9A51A] text-black px-4 py-1 rounded-md' to={`/login`}>Login</Link>
+                    }
                 </div>
             </div>
             
