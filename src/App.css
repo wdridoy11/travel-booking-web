@@ -7,3 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* hero section slider arrow color */
+.swiper-button-prev, .swiper-button-next {
+    color: #fff !important;
+}
