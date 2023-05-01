@@ -1,0 +1,11 @@
+.react-daterange-picker__wrapper {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .react-calendar {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}

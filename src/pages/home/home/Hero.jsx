@@ -1,6 +1,7 @@
  import React from "react";
  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
  import { Swiper, SwiperSlide } from 'swiper/react';
+
 // import css form swiper
  import 'swiper/css';
  import 'swiper/css/navigation';
@@ -16,7 +17,7 @@
  const travelPlace7 =`https://cdn.pixabay.com/photo/2017/12/28/02/25/saint-mary-lake-3044265_960_720.jpg`
 
 const Hero = () => {
-  
+
   return (
       <div className='hero-area'>
         <div className='container mx-auto'>
