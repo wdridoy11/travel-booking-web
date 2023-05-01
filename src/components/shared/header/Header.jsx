@@ -17,7 +17,7 @@ const Header = () => {
                     <Link className='text-base font-medium text-black' to={`/news`}>News</Link>
                     <Link className='text-base font-medium text-black' to={`/destination`}>Destination</Link>
                     <Link className='text-base font-medium text-black' to={`/`}>Blog</Link>
-                    <Link className='text-base font-medium text-black' to={`/`}>Contact</Link>
+                    <Link className='text-base font-medium text-black' to={`/contact`}>Contact</Link>
                     {user ? <>
                         <p className='text-base text-black font-medium'>{user.displayName}</p>
                         <Link className='text-base font-medium bg-[#F9A51A] text-black px-4 py-1 rounded-md' onClick={logOut}>Logout</Link>

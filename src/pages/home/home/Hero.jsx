@@ -1,7 +1,7 @@
  import React from "react";
  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
  import { Swiper, SwiperSlide } from 'swiper/react';
-
+ import { FaArrowRight } from 'react-icons/fa';
 // import css form swiper
  import 'swiper/css';
  import 'swiper/css/navigation';
@@ -25,7 +25,7 @@ const Hero = () => {
                 <div className='col-span-1'>
                     <h1 className='text-white text-5xl font-bold mb-3'>Cox's bazar</h1>
                     <p className='text-white text-base font-normal mb-4'>Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it ...</p>
-                    <button className=' text-black bg-[#F9A51A] border-0 font-medium px-8 py-3 rounded-md hover:bg-black hover:text-white duration-300'>Booking</button>
+                    <button className=' text-black bg-[#F9A51A] border-0 font-medium px-8 py-3 rounded-md hover:bg-black hover:text-white duration-500'>Booking <FaArrowRight className="inline-block ml-1"></FaArrowRight></button>
                 </div>
                 <div className="col-span-2 hero-slider">
                     <Swiper

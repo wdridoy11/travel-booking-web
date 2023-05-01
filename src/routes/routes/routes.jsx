@@ -11,6 +11,7 @@ import Registration from '../../pages/registration/Registration';
 import NewsDataLoad from '../../pages/news/NewsDataLoad';
 import SingleNewDisplay from '../../pages/news/SingleNewDisplay';
 import Destination from '../../pages/destination/Destination';
+import Contact from '../../pages/contact/Contact';
 
 // create router
 const router=createBrowserRouter([
@@ -35,6 +36,10 @@ const router=createBrowserRouter([
             {
                path:"destination",
                element:<Destination></Destination>
+            },
+            {
+                path:"contact",
+                element:<Contact></Contact>
             },
             {
                 path:"login",
