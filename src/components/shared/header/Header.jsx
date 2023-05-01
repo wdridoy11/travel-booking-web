@@ -6,7 +6,7 @@ import { AuthContext } from '../../../context/AuthProvider';
 const Header = () => {
   const {user,logOut}=useContext(AuthContext);
   return (
-    <div className='py-5'>
+    <div className='bg-transparent py-5'>
         <div className='container mx-auto'>
             <div className='flex justify-between items-center'>
                 <div>
