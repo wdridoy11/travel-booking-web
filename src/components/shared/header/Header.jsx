@@ -15,7 +15,7 @@ const Header = () => {
                 <div className='flex gap-6 items-center'>
                     <Link className='text-base font-medium text-black' to={`/`}>Home</Link>
                     <Link className='text-base font-medium text-black' to={`/news`}>News</Link>
-                    <Link className='text-base font-medium text-black' to={`/`}>Destination</Link>
+                    <Link className='text-base font-medium text-black' to={`/destination`}>Destination</Link>
                     <Link className='text-base font-medium text-black' to={`/`}>Blog</Link>
                     <Link className='text-base font-medium text-black' to={`/`}>Contact</Link>
                     {user ? <>

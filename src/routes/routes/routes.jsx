@@ -10,6 +10,7 @@ import Home from '../../pages/home/home/Home';
 import Registration from '../../pages/registration/Registration';
 import NewsDataLoad from '../../pages/news/NewsDataLoad';
 import SingleNewDisplay from '../../pages/news/SingleNewDisplay';
+import Destination from '../../pages/destination/Destination';
 
 // create router
 const router=createBrowserRouter([
@@ -22,14 +23,6 @@ const router=createBrowserRouter([
                 element:<Home></Home>
             },
             {
-                path:"login",
-                element:<Login></Login>
-            },
-            {
-                path:"registration",
-                element:<Registration></Registration>
-            },
-            {
                 path:"news",
                 element:<NewsDataLoad></NewsDataLoad>,
                 loader:({params})=>fetch(`http://localhost:5000/news`)
@@ -38,7 +31,19 @@ const router=createBrowserRouter([
                 path:"/news/:id",
                 element:<SingleNewDisplay></SingleNewDisplay>,
                 loader:({params})=>fetch(`http://localhost:5000/news/${params.id}`)
-            }
+            },
+            {
+               path:"destination",
+               element:<Destination></Destination>
+            },
+            {
+                path:"login",
+                element:<Login></Login>
+            },
+            {
+                path:"registration",
+                element:<Registration></Registration>
+            },
         ]
     }
 ])
